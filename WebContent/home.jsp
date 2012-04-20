@@ -51,7 +51,7 @@ if ("PWD_ERR".equals(request.getParameter("error"))) {
     window.google.identitytoolkit.setConfig({
         developerKey: "AIzaSyA5c-mPiZPmt2v-pZmQ63YhDXkFj3xt9QE",
         companyName: "",
-        callbackUrl: "http:/gitkit-demo.herokuapp.com/gitkit",
+        callbackUrl: "http://gitkit-demo.herokuapp.com/gitkit",
         realm: "",
         userStatusUrl: "/gitkit",
         loginUrl: "/gitkit",
