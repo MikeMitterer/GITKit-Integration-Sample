@@ -49,9 +49,9 @@ if ("PWD_ERR".equals(request.getParameter("error"))) {
 <script type="text/javascript">
   $(function() {
     window.google.identitytoolkit.setConfig({
-        developerKey: "<Insert your API-key here>",
+        developerKey: "AIzaSyA5c-mPiZPmt2v-pZmQ63YhDXkFj3xt9QE",
         companyName: "",
-        callbackUrl: "http://localhost:8080/gitkit",
+        callbackUrl: "http:/gitkit-demo.herokuapp.com:8080/gitkit",
         realm: "",
         userStatusUrl: "/gitkit",
         loginUrl: "/gitkit",

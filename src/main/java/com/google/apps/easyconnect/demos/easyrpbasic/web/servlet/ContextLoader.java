@@ -49,6 +49,6 @@ public class ContextLoader implements ServletContextListener {
 		Context.setConfig(config);
 		Context.setAccountService(accountService);
 		Context.setSessionManager(sessionManager);
-		Context.setGoogleApisDeveloperKey("<Insert your API-key here>");
+		Context.setGoogleApisDeveloperKey("AIzaSyA5c-mPiZPmt2v-pZmQ63YhDXkFj3xt9QE");
 	}
 }
