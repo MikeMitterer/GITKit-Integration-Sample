@@ -16,6 +16,15 @@
 		<jetty.version>8.1.2.v20120308</jetty.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>public.maven.repository</id>
+			<name>public.maven.repository on GitHub</name>
+			<url>https://github.com/MikeMitterer/public.maven.repository</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -31,11 +40,11 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
-		<!--dependency>
+		<dependency>
 			<groupId>com.google.gitkit</groupId>
 			<artifactId>gitkit</artifactId>
 			<version>1.1</version>
-		</dependency-->
+		</dependency>
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
@@ -91,6 +100,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.3</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -113,6 +123,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
 				<configuration>
 					<webXml>${basedir}/WebContent/WEB-INF/web.xml</webXml>
 					<warSourceDirectory>${basedir}/WebContent</warSourceDirectory>
