@@ -44,7 +44,7 @@ if ("PWD_ERR".equals(request.getParameter("error"))) {
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/googleapis/0.0.4/googleapis.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/jsapi"></script>
 <script type="text/javascript">
-  google.load("identitytoolkit", "1", {packages: ["ac"], language:"de"});
+  google.load("identitytoolkit", "1", {packages: ["ac"], language:"en"});
 </script>
 <script type="text/javascript">
   $(function() {
