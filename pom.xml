@@ -13,6 +13,7 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jetty.version>8.1.2.v20120308</jetty.version>
 	</properties>
 
@@ -20,7 +21,7 @@
 		<repository>
 			<id>public.maven.repository</id>
 			<name>public.maven.repository on GitHub</name>
-			<url>https://github.com/MikeMitterer/public.maven.repository</url>
+			<url>https://raw.github.com/MikeMitterer/public.maven.repository/master</url>
 			<layout>default</layout>
 		</repository>
 	</repositories>
@@ -44,6 +45,12 @@
 			<groupId>com.google.gitkit</groupId>
 			<artifactId>gitkit</artifactId>
 			<version>1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>at.mikemitterer</groupId>
+			<artifactId>mmtools</artifactId>
+			<version>1.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.json</groupId>
