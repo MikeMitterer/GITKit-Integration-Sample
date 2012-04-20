@@ -1,0 +1,52 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>DBMS</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.DbmsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SignUp</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Account</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.AccountServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DBMS</servlet-name>
+    <url-pattern>/dbms</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Account</servlet-name>
+    <url-pattern>/account</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <display-name>GIT Web Application Tutorial</display-name>
+</web-app>

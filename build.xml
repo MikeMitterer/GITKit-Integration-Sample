@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+ANT-Doku:
+	http://ant.apache.org/manual/index.html
+	http://ant-contrib.sourceforge.net/
+-->
+<project name="qrprofi.server" default="help" basedir="." >
+	<!--<property file="${basedir}/build.properties" />-->
+	<property name="asl.dir" value="/Volumes/programming/AntLibrary" />
+	<property name="qrprofi.server" value="qrprofi.server" />
+
+	<import file="${asl.dir}/asl-webapp-properties.xml"/>
+
+	<import file="${asl.dir}/asl-maven.xml"/>
+	<import file="${asl.dir}/asl-tools.xml"/>
+	<import file="${asl.dir}/asl-java.xml"/>
+	<import file="${asl.dir}/asl-git.xml"/>
+
+	<target name="help" description="--> Zeigt diese Info an...">
+		<echo taskname="----">Application "${maven.pom.artifactId}" Version: ${maven.pom.version}</echo>
+		<exec executable="ant" taskname=".">
+			<arg value="-p" />
+		</exec>
+	</target>
+
+	<target name="all" depends="maven.init,java.jargen,tools.backup.source,maven.deploy" description="Projekt wird erstellt\n">
+		<echo>JAR-File: ${project}-${maven.pom.version}.jar created!</echo>
+	</target>
+</project>

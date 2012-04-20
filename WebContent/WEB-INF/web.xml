@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" metadata-complete="true" version="2.5">
+  <servlet>
+    <servlet-name>DBMS</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.DbmsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GitKit</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.easyrp.client.basic.servlet.GitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Callback</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.easyrp.client.basic.servlet.CallbackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SignUp</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Account</servlet-name>
+    <servlet-class>com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.AccountServlet</servlet-class>
+  </servlet>
+<servlet>
+        <servlet-name>SessionMonServlet</servlet-name>
+        <servlet-class>sessionmon.SessionMonServlet</servlet-class>
+        <init-param>
+                <param-name>enabled</param-name>
+                <param-value>true</param-value>
+        </init-param>
+        <!-- needed only if you're running a clustered environment -->
+        <init-param>
+                <param-name>server_node_addresses</param-name>
+                <param-value>http://localhost:8080,http://localhost:8081</param-value>
+        </init-param>
+        <!-- optional configuration-->
+        <!--init-param>
+                <param-name>override_path</param-name>
+                <param-value>/foo/blah</param-value>
+        </init-param-->
+</servlet>
+  <servlet-mapping>
+    <servlet-name>DBMS</servlet-name>
+    <url-pattern>/dbms</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GitKit</servlet-name>
+    <url-pattern>/gitkit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Account</servlet-name>
+    <url-pattern>/account</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+        <servlet-name>SessionMonServlet</servlet-name>
+        <url-pattern>/sessionmon/*</url-pattern>
+</servlet-mapping>
+
+  <listener>
+    <listener-class>
+      com.google.apps.easyconnect.demos.easyrpbasic.web.servlet.ContextLoader
+    </listener-class>
+  </listener>
+<listener>
+        <listener-class>sessionmon.SessionListener</listener-class>
+</listener>
+<listener>
+        <listener-class>sessionmon.SessionAttributeListener</listener-class>
+</listener>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+
+  <display-name>GIT Web Application Tutorial</display-name>
+</web-app>

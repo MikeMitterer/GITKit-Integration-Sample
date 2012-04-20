@@ -1,0 +1,39 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/googleapis/0.0.4/googleapis.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/jsapi"></script>
+<script type="text/javascript">
+   google.load("identitytoolkit", "1.0", {packages: ["ac"]});
+</script>
+<script type="text/javascript">
+$(function(){
+  window.google.identitytoolkit.setConfig({
+    developerKey: "AIzaSyCWBH-lgC22VCbdcGo95L2qE4FccWQ1VPs",
+    companyName: "Your company",
+    callbackUrl: "<%= HttpUtil.getHostUrl(request) %>/gitkit",
+    userStatusUrl: "/gitkit",
+    loginUrl: "/gitkit",
+    signupUrl: "/signup.jsp",
+    homeUrl: "/home.jsp",
+    logoutUrl: "/logout",
+    realm: "",
+    idps: ["Gmail", "AOL", "Hotmail", "Yahoo"],
+    tryFederatedFirst: true,
+    useCachedUserStatus: false
+  });
+  $('#navbar').accountChooser();
+});
+</script>
+
+
+
+
+<% if (user != null) { %>
+  var userData = {
+    email: '<%= user.getEmail() %>',
+    displayName: '<%= user.getDisplayName() %>',
+    photoUrl: '<%= user.getPhotoUrl() %>',
+  };
+  window.google.identitytoolkit.updateSavedAccount(userData);
+  window.google.identitytoolkit.showSavedAccount('<%= user.getEmail() %>');
+<% } %>

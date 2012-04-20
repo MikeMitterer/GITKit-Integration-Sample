@@ -1,0 +1,261 @@
+body {
+  margin: 15px 0 2px;
+  background-color: #fff;
+}
+body, td, div, p, a, input {
+  font-family:arial, sans-serif;
+}
+input {
+  font-size:83%;
+}
+a {
+  color:#00c;
+}
+#outer_box {
+  background-color: #FFFFFF;
+  border: 4px solid #E8EEFA;
+  width: 280px;
+}
+
+#inner_box {
+  margin: 4px;
+  padding: 10px;
+  background-color: #E8EEFA
+}
+
+#login-box {
+  background-color: #FFFFFF;
+  border: 4px solid #E8EEFA;
+  width: auto;
+}
+
+#login-box-inner {
+  background-color: #E8EEFA;
+  border: 1px solid #E8EEFA;
+  font-family: arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 3px;
+  padding: 10px 20px;
+  text-align: left;
+}
+#login-box-inner .error {
+  color: red;
+}
+
+#login-box-inner .input-box {
+    width: 240px;
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+}
+
+#login-box-inner .input-button {
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    padding: 0 6px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    position: relative;
+}
+#login-box-inner .new-account {
+  color: #0000CC;
+  font-size: 11px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 6px;
+  text-decoration: underline;
+}
+.navbar-panel {
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.navbar-menu {
+  color: #00c;
+  cursor: pointer;
+  float: right;
+  margin: 0px 5px;
+  text-decoration: underline;
+}
+
+.navbar-menu-email {
+  float: right;
+  margin: 0px 5px;
+}
+
+.navbar-menu-email a.navbar-email {
+  color: black;
+  text-decoration: none !important;
+}
+
+.navbar-menu-email span {
+  color: #00c;
+  cursor: pointer;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.navbar-icon {
+  height: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.navbar-seperator {
+  float: right;
+}
+
+.navbar-dropdown {
+  background-color: #fff;
+  border: 2px outset #e8eefa;
+  padding: 10px;
+  position: absolute;
+}
+
+.navbar-dropdown-item { 
+  color: #00c !important;
+  cursor: pointer;
+  line-height: 20px;
+  text-decoration: none !important;
+}
+  
+.navbar-dropdown-item:hover { 
+  background-color: #e8eefa !important;
+}
+
+.navbar-dropdown-item-disabled {
+  line-height: 20px;
+  text-decoration: none !important;
+}
+
+.navbar-dropdown-item-disabled a {
+  color: gray;
+}
+
+
+ul.tabs {
+  border-bottom: 1px solid #ccc;
+  font: bold 11px verdana,arial,sans-serif;
+  list-style-type: none;
+  margin: 1em 0 0;
+  padding: 3px 17px;
+  text-align: left;
+  width: 900px;
+}
+
+ul.tabs li {
+  line-height: 24px;
+  display: inline;
+  font: bold 14px verdana,arial,sans-serif;
+  list-style-type: none;
+  text-align: left;
+}
+ul.tabs li a {
+  background-color: #bbb;
+  border-color: #ccc #ccc -moz-use-text-color;
+  border-radius: 5px 5px 0 0;
+  border-style: solid solid none;
+  border-width: 1px 1px medium;
+  color: #666666;
+  margin-right: 0;
+  padding: 10px 20px 3px;
+  text-decoration: none;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+}
+
+ul.tabs li.tab-sel a {
+  background-color: #E8EEFA;
+  color: #000000;
+  padding: 10px 20px 3px;
+  position: relative;
+  top: 1px;
+}
+.tab-panel {
+  background-color: #E8EEFA;
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+  padding: 1em;
+  text-align: left;
+  width: 900px;
+}
+.tab-panel-sel {
+  display: block;
+}
+.tips {
+  color: #aaa;
+  font-size: 13px;
+  margin-top: 20px;
+  padding: 3px;
+  text-align: left;
+  width: 900px;
+}
+
+
+#reg_box {
+  background-color: #FFFFFF;
+  border: 4px solid #E8EEFA;
+}
+
+#reg_area {
+  margin: 4px;
+  padding: 10px;
+  background-color: #E8EEFA
+}
+
+#reg_box input {
+  font-size: 16px;
+  margin-top: 2px;
+  padding: 6px;
+  width: 250px;
+}
+#reg_box select {
+  font-size: 13px;
+  margin-top: 2px;
+  padding: 6px;
+  height: 30px;
+}
+#reg_box td.label {
+  color: #1D2A5B;
+  font-size: 13px;
+  padding-right: 3px;
+  text-align: right;
+  width: 105px;
+}
+.signup-button td.signup-button-right {
+  background: url("../image/dl_button_right.jpg") repeat scroll 0 0 transparent;
+  height: 36px;
+  margin-right: 0;
+  width: 9px;
+}
+.signup-button td.signup-button-middle {
+  background: url("../image/dl_button_middle.jpg") repeat scroll 0 0 transparent;
+  cursor: pointer;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.signup-button td.signup-button-left {
+  background: url("../image/dl_button_left.jpg") repeat scroll 0 0 transparent;
+  height: 36px;
+  margin-left: 0;
+  width: 9px;
+}
+
+.signup-button td.signup-button-middle a.signup-button-link,
+.signup-button td.signup-button-middle a.signup-button-link a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.signup-error {
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
